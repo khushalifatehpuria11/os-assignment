@@ -29,13 +29,11 @@ int main() {
       rt[c]=0; 
       flag=1; 
     } 
-    else if(rt[c]>0) 
-    { 
+    else if(rt[c]>0) { 
       rt[c]-=tq; 
       time+=tq; 
     } 
-    if(rt[c]==0 && flag==1) 
-    { 
+    if(rt[c]==0 && flag==1) { 
       rem--; 
       printf("P[%d]\t|\t%d\t|\t%d\n",c+1,time-a_t[c],time-a_t[c]-b_t[c]); 
       w_t+=time-a_t[c]-b_t[c]; 

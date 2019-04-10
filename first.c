@@ -7,8 +7,7 @@ preempted by a higher priority process, the preempted process is placed at the e
 with priority 0 does not starve for resources and gets the CPU at some time unit to execute. Also compute waiting time, turn around.
 */
 #include<stdio.h> 
-int main() 
-{ 
+int main() { 
   int c,j,n;
   int time,rem;
   int flag=0,tq=10; 
@@ -16,8 +15,7 @@ int main()
   printf("\n\nEnter the Total number of Process:\t "); 
   scanf("%d",&n); 
   rem=n; 
-  for(c=0;c<n;c++) 
-  { 
+  for(c=0;c<n;c++) { 
     printf("Enter Arrival Time and Burst Time for Process Process Number %d :",c+1); 
     scanf("%d",&a_t[c]); 
     scanf("%d",&b_t[c]); 
@@ -26,10 +24,8 @@ int main()
   printf("Enter Time Quantum:%d\t",tq); 
 
   printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n"); 
-  for(time=0,c=0;rem!=0;) 
-  { 
-    if(rt[c]<=tq && rt[c]>0) 
-    { 
+  for(time=0,c=0;rem!=0;) { 
+    if(rt[c]<=tq && rt[c]>0) {
       time+=rt[c]; 
       rt[c]=0; 
       flag=1; 

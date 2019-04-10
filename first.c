@@ -22,7 +22,6 @@ int main() {
     rt[c]=b_t[c]; 
   } 
   printf("Enter Time Quantum:%d\t",tq); 
-
   printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n"); 
   for(time=0,c=0;rem!=0;) { 
     if(rt[c]<=tq && rt[c]>0) {
